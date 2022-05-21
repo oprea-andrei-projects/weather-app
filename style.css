@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    margin: 1;
+
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+
+        "header"
+        "main"
+        "footer"
+    
+    ;
+}
+
+.searchArea{
+
+    grid-area: header;
+    width: 100%;
+    height: 15vh;
+
+
+
+}
+
+i{
+
+    cursor: pointer;
+}
+
+.displayArea{
+
+
+    grid-area: main;
+    width: 100%;
+    height: 70vh;
+
+    background-image: url(/imagini/wim-van-t-einde-uj7eb7CgqRk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.latitudine{
+
+    width: 200px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.longitudine{
+
+    width: 200px;
+    height: 30px;
+    margin-left: 15px;
+
+}
+
+.wIcon{
+
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: 80px;
+}
+
+li{
+
+    list-style-type: none;
+    margin-top: 5px;
+    text-align: center;
+  
+}
+
+.card{
+
+    width: 300px;
+    height: 300px;
+    background-color:lightgrey;
+    margin: 15px;
+    border-radius: 5px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.weatherDetails{
+
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.contactArea{
+
+
+    grid-area: footer;
+    width: 100%;
+    height: 15vh;
+
+}
+
+
+
+
+.fdiv1{
+
+    width: 100%;
+}
+
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 1px;
+    border-radius: 50%;
+  }
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+
+.fa-instagram {
+    background: black;
+    color: white;
+  }
+
